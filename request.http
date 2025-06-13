@@ -1,0 +1,114 @@
+### Add Tour Package 4
+POST http://localhost:8087/api/packages/add
+Authorization: Basic rishitha:rish
+Content-Type: application/json
+
+{
+  "name": "Royal Rajasthan",
+  "destination": "Jaipur, Jodhpur, Udaipur",
+  "price": 12000.0,
+  "duration": 5,
+  "description": "Experience the royal heritage of Rajasthan with palace stays.",
+  "itinerary": "Day 1: Jaipur sightseeing\nDay 2: Amber Fort & local markets\nDay 3: Jodhpur forts\nDay 4: Udaipur lakes\nDay 5: Departure",
+  "imageUrl": "https://th.bing.com/th/id/R.eae0a5ff93b20d959b461d8c28cad31c?rik=fSHy3M0XVb0u2Q&riu=http%3a%2f%2fwww.amigoindiatours.com%2fTourPackage%2froyal-rajasthan-tour.jpg&ehk=63s2uhB55coBTMAltV9tr6Ckpo6gtnJUi4FTnfAGqrk%3d&risl=&pid=ImgRaw&r=0"
+}
+
+### Add Tour Package 5
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Kerala Backwaters",
+  "destination": "Alleppey",
+  "price": 8000.0,
+  "duration": 3,
+  "description": "Relax on a houseboat and enjoy Kerala's scenic backwaters.",
+  "itinerary": "Day 1: Arrival and houseboat check-in\nDay 2: Cruise through backwaters\nDay 3: Local village tour and departure",
+  "imageUrl": "https://www.tripsavvy.com/thmb/P-vBKShJXcsDT_5m-IF2xSMQ8q0=/3600x2400/filters:fill(auto,1)/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg"
+}
+
+### Add Tour Package 6
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Goa Beach Escape",
+  "destination": "Goa",
+  "price": 6500.0,
+  "duration": 4,
+  "description": "Enjoy the sun, sand, and vibrant nightlife of Goa.",
+  "itinerary": "Day 1: North Goa beaches\nDay 2: South Goa exploration\nDay 3: Water sports\nDay 4: Leisure and shopping",
+  "imageUrl": "https://voiceofadventure.com/wp-content/uploads/2022/06/60d0813807aff-Baga_Beach_In_Goa.jpg"
+}
+### Add Tour Package 7
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Mystic Manali Adventure",
+  "destination": "Manali",
+  "price": 9500.0,
+  "duration": 4,
+  "description": "Snow-capped mountains, adventure sports, and serene valleys.",
+  "itinerary": "Day 1: Arrival and local sightseeing\nDay 2: Solang Valley adventure\nDay 3: Rohtang Pass excursion\nDay 4: Departure",
+  "imageUrl": "https://th.bing.com/th/id/OIP.Qq3BQ8Aiao768cBkJ3E4UQHaEH?cb=thvnextc1&rs=1&pid=ImgDetMain"
+}
+
+### Add Tour Package 8
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Spiritual Varanasi",
+  "destination": "Varanasi",
+  "price": 7000.0,
+  "duration": 3,
+  "description": "Experience the spiritual essence of India on the banks of the Ganges.",
+  "itinerary": "Day 1: Ganga Aarti and temple tour\nDay 2: Sarnath visit\nDay 3: Local markets and departure",
+  "imageUrl": "https://th.bing.com/th/id/OIP.EB6GcJbw4z3wiZC8xVCy-QHaE7?cb=thvnextc1&rs=1&pid=ImgDetMain"
+}
+
+### Add Tour Package 9
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Andaman Island Retreat",
+  "destination": "Port Blair, Havelock",
+  "price": 18000.0,
+  "duration": 6,
+  "description": "Crystal clear waters, white sand beaches, and tropical adventures.",
+  "itinerary": "Day 1: Arrival at Port Blair\nDay 2: Cellular Jail and Corbyn's Cove\nDay 3: Havelock Island - Radhanagar Beach\nDay 4: Water sports\nDay 5: Neil Island\nDay 6: Departure",
+  "imageUrl": "https://www.elmens.com/wp-content/uploads/2019/08/Visit-Andaman-Island-to-have-the-most-Spectacular-Honeymoon-Trip-1068x761.jpg"
+}
+
+### Add Tour Package 10
+POST http://localhost:8087/api/packages/add
+Content-Type: application/json
+
+{
+  "name": "Darjeeling Tea Trails",
+  "destination": "Darjeeling",
+  "price": 8500.0,
+  "duration": 4,
+  "description": "Explore tea gardens, ride the toy train, and enjoy Himalayan views.",
+  "itinerary": "Day 1: Arrival and Mall Road\nDay 2: Tea estate tour\nDay 3: Tiger Hill sunrise\nDay 4: Departure",
+  "imageUrl": "https://th.bing.com/th/id/OIP.vB3VJWiu3GBrByMe8x4_BQHaEn?cb=thvnextc1&rs=1&pid=ImgDetMain"
+}
+### 2. Get All Packages
+GET http://localhost:8087/api/packages/all
+
+
+### 3. Delete Package (example ID: 1)
+DELETE http://localhost:8087/api/packages/delete/1
+
+
+### 4. Filter Packages (destination + price range)
+GET http://localhost:8087/api/packages/filter?destination=mysore&minPrice=3000&maxPrice=500000
+### 5. Search by Keyword
+GET http://localhost:8087/api/packages/search?keyword=palace
+### 6. Get Package by ID
+GET http://localhost:8087/api/packages/3
+
+###
+
