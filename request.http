@@ -125,7 +125,8 @@ GET http://localhost:8087/api/packages/all
 
 
 ### 3. Delete Package (example ID: 1)
-DELETE http://localhost:8087/api/packages/delete/35
+DELETE http://localhost:8087/api/packages/delete/2
+
 
 ### 4. Filter Packages (destination + price range)
 GET http://localhost:8087/api/packages/filter?destination=mysore&minPrice=3000&maxPrice=500000
