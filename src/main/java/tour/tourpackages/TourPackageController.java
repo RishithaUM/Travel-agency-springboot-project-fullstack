@@ -15,8 +15,7 @@ import java.util.List;
 @RequestMapping("/api/packages")
 public class TourPackageController {
 
-    @Autowired
-private TourPackageRepository tourPackageRepository;
+    
 
     @Autowired
     private TourPackageService tourPackageService;

@@ -83,7 +83,9 @@ public TourPackage updatePackage(Long id, TourPackage updatedPackage) {
     existing.setPrice(updatedPackage.getPrice());
     existing.setDescription(updatedPackage.getDescription());
     existing.setItinerary(updatedPackage.getItinerary());
-    existing.setImageUrl(updatedPackage.getImageUrl()); // <-- update imageUrl
+    //existing.setImageUrl(updatedPackage.getImageUrl()); // <-- update imageUrl
+    existing.setImageUrls(updatedPackage.getImageUrls());
+
 
     return repo.save(existing);
 }

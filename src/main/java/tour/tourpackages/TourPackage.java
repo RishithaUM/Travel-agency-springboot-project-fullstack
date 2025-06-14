@@ -1,5 +1,8 @@
 package tour.tourpackages;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
@@ -30,8 +33,10 @@ public class TourPackage {
     private String itinerary;
 
     
-    @Column(length = 1000)
-    private String imageUrl; // <-- Added field for image URL
+    //@Column(length = 1000)
+    //private String imageUrl; // <-- Added field for image URL
+  @ElementCollection
+private List<String> imageUrls = new ArrayList<>();
 
     // Constructors
     public TourPackage() {
@@ -44,7 +49,9 @@ public class TourPackage {
         this.price = price;
         this.description = description;
         this.itinerary = itinerary;
-        this.imageUrl = imageUrl;
+        this.imageUrls = imageUrls;
+
+        //this.imageUrl = imageUrl;
     }
     // Getters and Setters
 
@@ -99,13 +106,21 @@ public class TourPackage {
     public void setItinerary(String itinerary) {
         this.itinerary = itinerary;
     }
-    public String getImageUrl() {
-        return imageUrl;
+   // public String getImageUrl() {
+     //   return imageUrl;
+   // }
+
+    //public void setImageUrl(String imageUrl) {
+      //  this.imageUrl = imageUrl;
+    //}
+ public List<String> getImageUrls() {
+        return imageUrls;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImageUrls(List<String> imageUrls) {
+        this.imageUrls = imageUrls;
     }
+
 
     @Override
     public String toString() {
@@ -117,7 +132,7 @@ public class TourPackage {
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", itinerary='" + itinerary + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", imageUrls='" + imageUrls + '\'' +
                 '}';
     }
 }
